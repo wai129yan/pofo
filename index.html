@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./port.css" />
+    <style>
+      .slideAnimationObject {
+        visibility: hidden;
+      }
+
+      .slide {
+        animation-name: slideDown;
+        -webkit-animation-name: slideDown;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible;
+      }
+
+      @keyframes slideDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-70%);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="" style="background-color: rgb(222, 240, 245)">
+    <!-- nav -->
+    <nav
+      class="navbar navbar-expand-lg bg-light text-uppercase shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fs-2 fw-bold" href="#">My Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#About"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">WORK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav close -->
+
+    <!-- home -->
+    <section class="home p-5" id="About">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-md-6 mt-5">
+            <div class="text-center">
+              <img
+                src="https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG3TjXy6U3knc9xNx2iEJWTa0o-oAEopDfLn5Y_N3oVi2q3ey490QjMMuaR0711Mn9AQ1_QZ3h1_HI_3ez5FcqP0oEFZitZqVqdaYeFBNEe4HdkD11OU8EvsL4ifAhMmzNuD5VbgGYOR49mjj5VjZRHWByOV1TJ5DQPETIgmL1Jes5tyzCG9-WM-JUtJuTocWNz-2wJP7zZRaLZ4_PndUWvGDZNRaifXhNCs_BugWVA5o/Rivers-coding.jpg?errorImage=false"
+                class="rounded-circle"
+                width="300"
+                height="300"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 mt-5 order-md-first">
+            <div class="my-profile">
+              <p class="text-muted mb-1">Hello I'm</p>
+              <h1 class="text-danger text-uppercase fs-1 fw-bold">
+                WEB DEVELOPER
+              </h1>
+              <h2 class="fs-2">K.WAI YAN</h2>
+              <h4 class="mt-4 text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                veritatis dolorum libero in beatae quae numquam repellendus
+                veniam illo soluta omnis vitae, accusamus delectus.
+              </h4>
+
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                quidem fuga pariatur cumque accusamus tempore commodi
+                voluptatibus voluptatem cupiditate recusandae! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Incidunt voluptatum
+                tempora laborum perspiciatis iure quae blanditiis autem,
+                excepturi corporis soluta modi corrupti ipsa veritatis minima
+                consequuntur laudantium! Fuga facere hic unde fugiat tempore
+                molestiae! Accusamus expedita ab aperiam doloribus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- home end -->
+
+    <!-- WORK -->
+    <div class="skill p-5 me-4" id="experience">
+      <div class="container-lg">
+        <div class="row justify-content-center m-3">
+          <div class="col-lg-6"></div>
+          <div class="section-title text-center">
+            <h2 class="fw-bold">WORK</h2>
+          </div>
+        </div>
+        <!-- left side -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-text">
+              <h3 class="fs-2 mb-3">Daily</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+              reiciendis asperiores. Obcaecati?
+            </p>
+            <div class="row text-uppercase text-center my-3">
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4 class="fs-1 fw-bold">50+</h4>
+                  <p class="text-muted">Projected Completed</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4 class="fs-1 fw-bold">12+</h4>
+                  <p class="text-muted">Happy Clients</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4 class="fs-1 fw-bold">5+</h4>
+                  <p class="text-muted">Positive Reviews</p>
+                </div>
+              </div>
+            </div>
+            <!-- download link -->
+            <div class="row mb-4">
+              <div class="col-lg-12 d-flex">
+                <a
+                  href="./履歴書-kyaw wai yan20230516.docx"
+                  download
+                  class="btn btn-danger me-4 px-3"
+                  >Download CV</a
+                >
+
+                <div class="social-link hover-overlay mt-2">
+                  <a
+                    href="https://getbootstrap.com/docs/5.2/components/progress/"
+                    target="_blank"
+                    ><i class="bi bi-facebook text-dark me-1"></i
+                  ></a>
+                  <a
+                    href="https://getbootstrap.com/docs/5.2/components/progress/"
+                    target="_blank"
+                    ><i class="bi bi-twitter text-dark me-1"></i
+                  ></a>
+                  <a
+                    href="https://getbootstrap.com/docs/5.2/components/progress/"
+                    target="_blank"
+                    ><i class="bi bi-youtube text-dark me-1"></i
+                  ></a>
+                  <a
+                    href="https://getbootstrap.com/docs/5.2/components/progress/"
+                    target="_blank"
+                    ><i class="bi bi-line text-dark me-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- right side -->
+          <div class="col-md-6">
+            <div class="skill mb-3">
+              <h3>HTML</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="80"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <div class="skill mb-3">
+              <h3>CSS</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 75%"
+                  aria-valuenow="75"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <div class="skill mb-3">
+              <h3>JAVA SCRIPT</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="80"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <div class="skill mb-3">
+              <h3>BOOSTRAP</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 75%"
+                  aria-valuenow="75"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORK close -->
+
+    <!-- Service section -->
+    <div class="projects m-5" id="services">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center mb-5">
+              <h2 class="fw-bold">SERVICES</h2>
+            </div>
+          </div>
+        </div>
+        <!-- project -->
+        <div class="row text-center">
+          <div class="col-lg-4 mb-4">
+            <div class="project-item bg-white p-3 rounded shadow-sm">
+              <div class="icon">
+                <i class="bi bi-code-slash text-danger fs-3"></i>
+              </div>
+              <h3 class="py-2">Web Development</h3>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Architecto eveniet culpa labore fuga numquam distinctio.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="project-item bg-white p-3 rounded shadow-sm">
+              <div class="icon">
+                <i class="bi bi-lightbulb text-danger fs-3"></i>
+              </div>
+              <h3 class="py-2">Creative</h3>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Exercitationem quaerat amet eaque molestias. Ut, vero? sectetur
+                adipisicing elit. Architecto eveniet culpa labore fuga numquam
+                distinctio.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="project-item bg-white p-3 rounded shadow-sm">
+              <div class="icon">
+                <i class="bi bi-images text-danger fs-3"></i>
+              </div>
+              <h3 class="py-2">Photoshop</h3>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Architecto eveniet culpa labore fuga numquam distinctio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service section close -->
+
+    <!--portfolio start -->
+    <div class="pofolio slideAnimationObject" id="portfolio">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center mb-5">
+              <h2 class="fw-bold">PORTFOLIO</h2>
+              <p class="fs-4">What I can do</p>
+            </div>
+          </div>
+        </div>
+        <!-- dashboard -->
+        <div class="row p-4 mb-3 text-center" id="pic">
+          <div class="col-lg-4 col-md-6">
+            <div class="items">
+              <img
+                src="./dashboard/Screenshot (5).png"
+                class="w-100 img-fluid shadow-sm"
+                style="height: 230px"
+              />
+              <h4>Online Calculator</h4>
+              <p>
+                <a
+                  href="https://benevolent-griffin-9ebf09.netlify.app"
+                  target="_blank"
+                  class="text-decoration-none"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="items">
+              <img
+                src="./dashboard/Screenshot (6).png"
+                class="w-100 img-fluid shadow-sm"
+                style="height: 230px"
+              />
+              <h4>Trip For You</h4>
+              <p>
+                <a
+                  href="https://inspiring-florentine-d3d600.netlify.app"
+                  target="_blank"
+                  class="text-decoration-none"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="items">
+              <img
+                src="./dashboard/Screenshot (7).png"
+                class="w-100 img-fluid shadow-sm"
+                style="height: 230px"
+              />
+              <h4>Our Business</h4>
+              <p>
+                <a
+                  href="https://cute-sprite-4d312b.netlify.app"
+                  target="_blank"
+                  class="text-decoration-none"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="items">
+              <img
+                src="./dashboard/IT-dashboard-example.png"
+                class="w-100 img-fluid shadow-sm"
+                style="height: 230px"
+              />
+              <h4>Dashboard</h4>
+              <p>
+                <a href="#" class="text-danger text-decoration-none"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="items">
+              <img
+                src="./dashboard/project-controlling-dashboard.png"
+                class="w-100 img-fluid shadow-sm"
+                style="height: 230px"
+              />
+              <h4>Dashboard</h4>
+              <p>
+                <a href="#" class="text-danger text-decoration-none"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="items">
+              <img
+                src="./dashboard/SampleProjectDashboardHome.png"
+                class="w-100 img-fluid shadow-sm"
+                style="height: 230px"
+              />
+              <h4>Dashboard</h4>
+              <p>
+                <a href="#" class="text-danger text-decoration-none"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- last work start close -->
+    <!-- marketing -->
+    <div class="title bg-danger mb-3" id="title">
+      <div class="container-lg py-3">
+        <div class="row">
+          <div class="text-center">
+            <p class="text-light">Do you have any projects ?</p>
+            <h2 class="text-light">I'm available for freelancer projects</h2>
+            <a href="#" class="btn btn-outline-light">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- marketing close  -->
+
+    <!-- member  -->
+    <div class="members mt-3" id="members">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center mb-5">
+              <h2 class="fw-bold">Our Team Members</h2>
+            </div>
+          </div>
+
+          <!-- carousel -->
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active bg-danger"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                class="bg-danger"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                class="bg-danger"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner ms-3">
+              <!-- card -->
+              <div
+                class="carousel-item active p-5 rounded"
+                style="background: rgb(222, 243, 242, 0.5)"
+              >
+                <div class="d-flex align-items-center">
+                  <img
+                    src="https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG9hLKqVxK4bD_kYl4CVfX034qZLXPZsRsH_SfFPx7FUbJdmZwNGjFckeJtg2LZ3VqFSdRSh3vJlBglzB-7GMAimtvDpwewLmsmjsxqvMN-D2zSdSlzEPfD15qioW2JjBqYc3DLZllDC4e3ikJ-7G7nZoTj5b248QHvoPxkP7eKfMoX_Q5a3x7BDXmsjKK0p7fujXu47yBOik-u-7rXQH-cAGPI-DJ3HS4YH7f6LdJu3NIELDYH_cKXzsa5srbtqzekCoZArOSBnglaxzO4J1ZXu0lvkukD5MUp2ihHFq-6uRMlGyZi8sqO32-X7we-zDSA==/2020_6largeimg_2106819729.jpg?errorImage=false"
+                    class="rounded-circle"
+                    width="150px"
+                    height="150px"
+                  />
+
+                  <div class="ms-3">
+                    <h3 class="mb-3">KYAW AUNG</h3>
+                    <p>Senior Web Developer</p>
+                  </div>
+                </div>
+                <p class="py-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  adipisci ad magni, sapiente ut, incidunt culpa aliquam
+                  provident quibusdam dignissimos aspernatur quidem vitae. Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+                  ipsam maxime omnis molestiae cum fugit, minus, ullam rem
+                  excepturi harum eius obcaecati sint tempora ab ad, laborum
+                  mollitia officiis molestias officia commodi. Et ut debitis
+                  nobis eveniet animi velit nemo necessitatibus adipisci cum.
+                  Sint molestias omnis delectus eaque sit libero.
+                </p>
+                <div class="skillful text-danger">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <!-- card end -->
+
+              <!-- card -->
+              <div
+                class="carousel-item p-5 rounded"
+                style="background: rgb(222, 243, 242, 0.5)"
+              >
+                <div class="d-flex align-items-center">
+                  <img
+                    src="https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG3gY2rLF-riKQycGpVnPieg27e7O-R3aWr-sPz1jiTMMHn-c8P8i0Twb_BsI_dnRMV_OCHcVlO7TvoX8sWDbEvaamH7oXMNnvYo-si2e_2wPKwdkL5k0gTxM8poAx9r4uvXKBa-r50a0yWGk5MQr9AO4b8ywbAJep-P5cZUMmtCYKMLbjEsNvKPCxPIcFTRaOKDgoABV307VfLy5EkLdMRkDH7A_BgcESj35LGb-GXbDrnYZ606oGVkjHPpmmViqcDhQFuaRPezwkzNZYNyHQMWmae_O-NXJ5ZwJWie4wXzbAbT9uMl7GC3zlWe3pLXvsfdBpypsLmAfBO4MHrTjmyvBMoPYG-HUNRZF1x8CDzGsy-Ij8CrYkQpp5pB2_lheaIH_QYZecdTV2ByUR4HWSc58sZv5YCy3kfPXOGaVQYTd9UFEYk52BBbKc0GyGjOxdiyalMdQKqAb-dV1kFzg5nonUKd3DK-w-XG3neEFJEreoH2SH96tp4VR9j7QRTKz5Q==/85"
+                    class="rounded-circle"
+                    width="150px"
+                    height="150px"
+                  />
+
+                  <div class="ms-3">
+                    <h3 class="mb-3">KO KYAW</h3>
+                    <p>Senior Web Developer</p>
+                  </div>
+                </div>
+                <p class="py-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis ipsam maxime omnis molestiae cum fugit, minus, ullam
+                  rem excepturi harum eius obcaecati sint tempora ab ad, laborum
+                  mollitia officiis molestias officia commodi. Et ut debitis
+                  nobis eveniet animi velit nemo necessitatibus adipisci cum.
+                  Sint molestias omnis delectus eaque sit libero.
+                </p>
+                <div class="skillful text-danger">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+              </div>
+              <!-- card end -->
+              <!-- card -->
+              <div
+                class="carousel-item p-5 rounded"
+                style="background: rgb(222, 243, 242, 0.5)"
+              >
+                <div class="d-flex align-items-center">
+                  <img
+                    src="https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG4ZL6w0VC0p0rfh06jBQD68QiiVXvDtfRLGDrYGK6Wfc_9so1lrC3VK3opv6ViJC2wx5dkoX2yLt6MumPbe_FYN3RdGC9LV2RTOxOnXIMwAsgEKGUtMmPDos7ZA-sBQmQ6aeEHiySb__BQrLhrs8Dxeg8C7VqK_L5fTkSxTyP3949AsZjxqFhb5LUxM3a6pLoF8IIJwkyfpghpJ1J_ea3WDJhEupF57x2-m66Glj-_asLssnLZoDUIQrgPEpeISPtPKOs0HD2JdbiAMZL40A1VI=/developer-1.jpg"
+                    class="rounded-circle"
+                    width="150px"
+                    height="150px"
+                  />
+
+                  <div class="ms-3">
+                    <h3 class="mb-3">MYA MYA</h3>
+                    <p>Junior Web Delveloper</p>
+                  </div>
+                </div>
+                <p class="py-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  dolores voluptas enim. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Veritatis ipsam maxime omnis molestiae cum
+                  fugit, minus, ullam rem excepturi harum eius obcaecati sint
+                  tempora ab ad, laborum mollitia officiis molestias officia
+                  commodi. Et ut debitis nobis eveniet animi velit nemo
+                  necessitatibus adipisci cum. Sint molestias omnis delectus
+                  eaque sit libero.
+                </p>
+                <div class="skillful text-danger">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+              </div>
+              <!-- card end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact section -->
+    <section class="contact mt-3 slideAnimationObject" id="contact">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center mb-5">
+              <h2 class="fw-bold">Contact Us</h2>
+            </div>
+          </div>
+          <p class="text-muted text-center mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            expedita perferendis, quas quo vitae eum veritatis ullam
+            reprehenderit perspiciatis unde labore culpa recusandae! Deserunt,
+            in sunt iure ratione pariatur aperiam sit, alias repudiandae saepe
+            nisi eaque quis omnis, ex dolor?
+          </p>
+          <div class="row">
+            <div class="col-md-5">
+              <div class="icon">
+                <i class="bi bi-geo-alt-fill text-danger"></i><br />
+                <span>Address</span>
+                <p>
+                  lorem.ipusem dolt lorem.<br />
+                  lorem.ipusem doltstr
+                </p>
+              </div>
+
+              <div class="icon">
+                <i class="bi bi-telephone-outbound-fill text-danger"></i><br />
+                <span>Phone</span>
+                <p>123-345-6789</p>
+              </div>
+
+              <div class="icon">
+                <i class="bi bi-envelope-at-fill text-danger"></i><br />
+                <span>Email</span>
+                <p>kgzoelay@gmail.com</p>
+              </div>
+            </div>
+            <!-- member close -->
+            <!-- contact -->
+            <div class="col-md-7">
+              <div class="contact-form">
+                <form action="#">
+                  <div class="row">
+                    <div class="col-lg-6 mt-3">
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                      <input
+                        type="Email"
+                        placeholder="Email"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 mt-3">
+                      <input
+                        type="text"
+                        placeholder="Subject"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 mt-3">
+                      <textarea
+                        rows="6"
+                        cols="5"
+                        placeholder=" Message"
+                        class="form-control"
+                      >
+                      </textarea>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="btn btn-danger mt-3 mb-3">Submit</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="container-lg border-top py-4">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="text-center fw-bold">We Learn, We Share , We Code</p>
+            <br />
+            <p class="text-center">
+              &#169; 2023.All Rights Reserved | Real Marketing by <b>Wai Yan</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- close the project -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(() => {
+        $(window).scroll(() => {
+          let winTop = $(window).scrollTop();
+          console.log(winTop);
+          let animatedObjects = $(".slideAnimationObject");
+
+          animatedObjects.each(function () {
+            let element = $(this);
+            let elementTopPosition = element.offset().top;
+            if (winTop > elementTopPosition - 750) {
+              element.addClass("slide");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
